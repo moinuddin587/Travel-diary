@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div id="home">
+    <div class="home-tour-details">
+        <h1>Create Your Travel Story With <br> <span>Travel Diary</span></h1>
+        <p>We have exciting tour packages every week!Book your seat quickly for special discounts!</p>
+        <a class="home-btn" href="{% url 'post_list' %}">Explore Now</a>
+    </div>
+    <div class="home-images">
+        <img src="{% static 'images/travel.jpg' %}" alt="">
+        <img src="{% static 'images/travel1.jpg' %}" alt="">
+        <img src="{% static 'images/travel.jpg' %}" alt="">
+        <img src="{% static 'images/travel1.jpg' %}" alt="">
+    </div>
+</div>
+
+{% endblock content %}

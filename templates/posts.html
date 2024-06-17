@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="heading-tour-page">Our Upcoming Tours</h1>
+{% for post in post_list %}
+<div class="tours">
+    <img src="{{post.image.url}}" alt="">
+    <div class="post-text">
+        <h1>{{post.title}}</h1>
+        <p class="tour-date">Date of Journey: {{post.tour_date}}</p>
+        <p>{{post.description}}</p>
+        <p class="price">Ticket price: ${{post.price}}</p>
+        <a href="#" class="buy">Buy Now</a>
+    </div>
+</div>
+{% endfor %}
+{% endblock content %}

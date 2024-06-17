@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: skyblue;
+    background-image: url('/static/images/3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* navbar */
+nav {
+    background-color: rgb(38, 35, 35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 40px; */
+    font-size: 30px;
+    padding: 15px 0;
+    padding-left: 10px;
+}
+
+#nav-left {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 10px;
+    /* padding: 40px 0; */
+}
+
+#nav-left a {
+    color: white;
+}
+
+#nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+    background-color: rgb(38, 35, 35);
+    /* padding: 40px 0; */
+    /* color: rgb(141, 11, 37); */
+    list-style: none;
+    height: 20px;
+    font-size: 30px;
+    padding-right: 20px;
+}
+
+#nav-right a:hover {
+    font-size: 40px;
+    color: skyblue;
+}
+
+#nav-right a {
+    transition: 1s;
+    text-decoration: none;
+    color: white;
+}
+
+/* home */
+
+#home {
+    /* width: 100%; */
+    margin: 4% 2%;
+    gap: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+}
+
+
+#home img {
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px grey;
+}
+
+#home .home-images {
+    gap: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+#home h1 {
+    font-size: 100px;
+}
+
+#home p {
+    font-size: 30px;
+    margin: 5%;
+}
+
+.home-tour-details {
+    margin-top: 2%;
+}
+
+.home-tour-details span {
+    color: rgb(145, 13, 39);
+}
+
+.home-btn {
+    text-decoration: none;
+    font-size: 50px;
+    padding: 1% 2%;
+    color: white;
+    border-radius: 12px;
+    background-color: rgb(125, 10, 33);
+    ;
+}
+
+/* Post tour lists */
+
+.tours {
+    display: flex;
+    gap: 2%;
+    margin: 2% 4%;
+    padding: 1%;
+    background-color: rgb(201, 234, 236);
+    border: 1px solid rgb(163, 161, 161);
+    border-radius: 10px;
+}
+
+.tours h1 {
+    font-size: 40px;
+    margin-bottom: 3%;
+}
+
+.tours p {
+    width: 50%;
+    margin: 1% 0;
+    font-size: 22px;
+}
+
+.tours img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.tours .buy {
+    margin-top: 2%;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: rgb(209, 0, 0);
+    color: white;
+}
+
+.tours .price {
+    margin: 5% 0;
+    font-weight: bold;
+}
+
+.tours .tour-date {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 4%;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.heading-tour-page {
+    margin: 1% 4%;
+    font-size: 50px;
+    color: rgb(125, 10, 33);
+}
+
+/* blogs */
+
+.blog-headline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-blogs-page {
+    margin: 1% 4%;
+    font-size: 50px;
+    color: rgb(125, 10, 33);
+}
+
+.blog-headline a {
+    font-size: 50px;
+    /* padding-right: 100px; */
+}
+
+.blogs img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.blogs {
+    margin: 2% 4%;
+    display: flex;
+    gap: 1%;
+    flex-direction: row;
+}
+
+.blogs a {
+    text-decoration: none;
+    color: rgb(125, 10, 33);
+}
+
+.blog-each {
+    border: 1px solid rgb(163, 161, 161);
+    margin: 0 1%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 12px gray;
+}
+
+.blogs-text {
+    margin: 2%;
+}
+
+/* blog detail */
+
+.blog img {
+    width: 1000px;
+    height: 800px;
+    border-radius: 10px;
+}
+
+.blog {
+    display: flex;
+    margin: 30px;
+    gap: 40px;
+}
+
+.blog h1 {
+    font-size: 70px;
+}
+
+.blog .myp {
+    font-size: 40px;
+    color: rgb(140, 36, 43);
+}
+
+.blog .desc {
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+
+#form {
+    width: 50%;
+    margin-left: 20px;
+}
+
+#form .new-btn {
+    padding: 7px 20px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: green;
+    color: white;
+}
+
+
+.edit-btn {
+    padding: 7px 20px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: green;
+    color: white;
+}
+
+.edit-form {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.delete-btn {
+    padding: 7px 20px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: red;
+    color: white;
+}
+
+.delete-form {
+    margin: 2%;
+}
+
+.login-btn {
+    padding: 7px 20px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: green;
+    color: white;
+}
+
+.login-form {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.logout-btn {
+    align-items: center;
+    padding: 7px 20px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: red;
+    color: white;
+}
+
+/* .logout-form {
+    margin: 2%;
+} */
