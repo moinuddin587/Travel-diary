@@ -20,7 +20,6 @@
             <p style="width: 200px; align-items: center;">Hi {{ user.username }}!, </p>
             <form action="{% url 'logout' %}" class="logout-form" method="post">
                 {% csrf_token %}
-                {{ form.as_p }}
                 <input class="logout-btn" type="submit" value="Log Out">
             </form>
             {% else %}

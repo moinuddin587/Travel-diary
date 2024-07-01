@@ -68,7 +68,7 @@ nav {
     margin: 4% 2%;
     gap: 2%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: start;
     text-align: center;
 }
@@ -308,6 +308,10 @@ nav {
     color: white;
 }
 
-/* .logout-form {
-    margin: 2%;
-} */
+
+.flexbtn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 400px;
+}

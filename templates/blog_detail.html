@@ -5,7 +5,13 @@
     <img src="{{blog.image.url}}" alt="">
     <div class="blog-text">
         <h1>{{blog.title}}</h1>
-        <p class="myp">by {{blog.author}}</p>
+        <div class="flexbtn">
+            <p class="myp">by {{blog.author}}</p>
+            <div>
+                <a href="{% url 'blog_update' blog.id %}">Edit</a>
+                <a href="{% url 'blog_delete' blog.id %}">Delete</a>
+            </div>
+        </div>
         <hr>
         <p class="desc">{{blog.description}}</p>
     </div>
